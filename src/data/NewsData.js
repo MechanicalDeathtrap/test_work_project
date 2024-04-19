@@ -8,7 +8,7 @@ import sixthImage from "/public/card611.png"
 export const NewsData = [
     {
         id: 0,
-        imgInnerLink: {firstImage},
+        imgInnerLink: firstImage,
         title: 'Заголовок новости 1',
         description: 'Описание новости в 3 строки Описание новости в 3 строкиОписание новости в 3 строкиОписание новости в 3 строки Описание новости в 3 строки Описание...',
         date: '01 января 1990',
@@ -25,7 +25,7 @@ export const NewsData = [
     },
     {
         id: 1,
-        imgInnerLink: {secondImage},
+        imgInnerLink: secondImage,
         title: 'Заголовок новости 2',
         description: 'Описание новости в 3 строки Описание новости в 3 строкиОписание новости в 3 строкиОписание новости в 3 строки Описание новости в 3 строки Описание...',
         date: '01 января 1990',
@@ -42,7 +42,7 @@ export const NewsData = [
     },
     {
         id: 2,
-        imgInnerLink: {thirdImage},
+        imgInnerLink: thirdImage,
         title: 'Заголовок новости 3',
         description: 'Описание новости в 3 строки Описание новости в 3 строкиОписание новости в 3 строкиОписание новости в 3 строки Описание новости в 3 строки Описание...',
         date: '01 января 1990',
@@ -59,7 +59,7 @@ export const NewsData = [
     },
     {
         id: 3,
-        imgInnerLink: {fourthImage},
+        imgInnerLink: fourthImage,
         title: 'Заголовок новости 4',
         description: 'Описание новости в 3 строки Описание новости в 3 строкиОписание новости в 3 строкиОписание новости в 3 строки Описание новости в 3 строки Описание...',
         date: '01 января 1990',
@@ -76,7 +76,7 @@ export const NewsData = [
     },
     {
         id: 4,
-        imgInnerLink: {fifthImage},
+        imgInnerLink: fifthImage,
         title: 'Заголовок новости 5',
         description: 'Описание новости в 3 строки Описание новости в 3 строкиОписание новости в 3 строкиОписание новости в 3 строки Описание новости в 3 строки Описание...',
         date: '01 января 1990',
@@ -93,7 +93,7 @@ export const NewsData = [
     },
     {
         id: 5,
-        imgInnerLink: {sixthImage},
+        imgInnerLink: sixthImage,
         title: 'Заголовок новости 6',
         description: 'Описание новости в 3 строки Описание новости в 3 строкиОписание новости в 3 строкиОписание новости в 3 строки Описание новости в 3 строки Описание...',
         date: '01 января 1990',
