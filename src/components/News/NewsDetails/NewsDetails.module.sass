@@ -1,0 +1,71 @@
+@import "/src/assets/colors.sass"
+@import 'src/mixins/AdaptiveMixins.sass'
+
+.newsContainer
+  background-color: $black
+  padding: 186.8px 444px 150px 40px
+  display: flex
+  gap: 20px
+  @include mobile-tablet
+    padding: 123px 0 80px 0
+    flex-direction: column
+    gap: 20px
+
+.title
+  font-weight: 600
+  margin: 0
+  text-transform: uppercase
+  @include adaptive_font(40)
+  @include mobile-tablet
+    font-size: 23px
+
+.date
+  font-weight: 400
+  color: rgb($white, 0.5)
+  @include mobile-tablet
+    font-size: 16px
+
+.newsImage
+  object-fit: none
+  width: 100%
+
+  @include mobile-tablet
+    width: 320px
+    height: 218px
+
+.newsInfo
+  display: flex
+  flex-direction: column
+  gap: 40px
+  width: 440px
+  @include mobile-tablet
+    gap: 30px
+    padding: 0 10px 0 10px
+    width: 100%
+
+  &__title
+    display: flex
+    flex-direction: column
+    gap: 20px
+    @include mobile-tablet
+      gap: 10px
+
+
+  &__info
+    display: flex
+    flex-direction: column
+    gap: 20px
+
+.mainDescription
+  font-weight: 600
+  text-transform: uppercase
+  line-height: 110%
+  @include adaptive_font(20)
+  @include mobile-tablet
+    font-size: 20px
+
+.description
+  font-weight: 400
+  line-height: 130%
+  @include mobile-tablet
+    font-size: 16px

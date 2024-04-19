@@ -1,0 +1,111 @@
+@import 'src/assets/colors.sass'
+@import 'src/mixins/AdaptiveMixins.sass'
+
+.mainContainer
+  background-color: $black
+  position: relative
+  box-sizing: border-box
+  padding-top: 13.5vh
+
+.sliderContainer
+  display: grid
+  grid-auto-flow: row
+  grid-template-columns:  50% 50%
+  grid-gap: 0 20px
+  opacity: 0
+  transition-duration: 0.7s
+  @include mobile-tablet
+    display: flex
+    flex-direction: column-reverse
+    align-items: center
+    gap: 20px
+
+
+.infoContainer
+  display: flex
+  flex-direction: column
+  gap: 16vw
+  margin-bottom: 40px
+  @include mobile-tablet
+    padding: 0 20px 0 10px
+    gap: 41px
+
+.tag
+  @include adaptive_font(12)
+  font-weight: 500
+  color: rgb($white, 0.5)
+
+.mainInfo
+  display: flex
+  flex-direction: column
+  gap: 37px
+  @include mobile-tablet
+    width: 290px
+
+  &__tagContainer
+    padding: 6px 15px
+    border-radius: 20px
+    border: 1px solid rgb($white, 0.5)
+    width: max-content
+    @include mobile-tablet
+      display: none
+
+  &__info
+    display: flex
+    flex-direction: column
+    gap: 20px
+    @include mobile-tablet
+      gap: 10px
+
+.slideTitle
+  margin: 0
+  text-transform: uppercase
+  font-weight: 600
+  @include adaptive_font(40)
+
+  @include mobile-tablet
+    @include adaptive_font_mobile(24)
+
+.slideDesriptiom
+  width: 440px
+  font-weight: 400
+  color: rgb($white, 0.5)
+  @include mobile-tablet
+    @include adaptive_font_mobile(16)
+    width: 290px
+
+.arrows
+  display: flex
+  gap: 20px
+
+.rightArrow
+  transform: rotate(180deg)
+
+.leftArrow, .rightArrow
+  cursor: pointer
+
+.active
+  opacity: 1
+  padding-top: 40px
+  margin: 0 40px
+  transition-duration: 0.7s
+  border-bottom: 1px solid rgb($white, 0.3)
+  @include mobile-tablet
+    margin: 0
+    padding-top: 55px
+
+.imageContainer
+  width: 100%
+  margin-bottom: 40px
+  @include mobile-tablet
+    display: flex
+    justify-content: center
+    margin: 0
+    gap: 20px
+
+.sliderImage
+  width: 100%
+
+  @include mobile-tablet
+    width: 320px
+    height: 218px

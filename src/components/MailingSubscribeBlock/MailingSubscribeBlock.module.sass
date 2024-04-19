@@ -1,0 +1,67 @@
+@import "src/assets/colors.sass"
+@import 'src/mixins/AdaptiveMixins.sass'
+
+.mainContainer
+  padding: 80px 40px 78px 40px
+  display: flex
+  justify-content: space-between
+  @include mobile-tablet
+    padding: 40px 10px
+    flex-direction: column
+    gap: 30px
+
+.title
+  @include adaptive_font(40)
+  font-weight: 600
+  text-transform: uppercase
+  color: $black
+  margin: 0
+  @include mobile-tablet
+    @include adaptive_font_mobile(24)
+
+.smallDescription
+  font-weight: 400
+  color: $black
+  @include mobile-tablet
+    display: none
+
+.form
+  display: flex
+  flex-direction: column
+  gap: 30px
+
+  &__inputs
+    display: flex
+    flex-direction: column
+    gap: 15px
+
+.inputs__fields
+  display: grid
+  grid-auto-flow: row
+  grid-template-columns:  30.5vw 30.5vw
+  grid-gap: 20px 20px
+  @include mobile-tablet
+    display: flex
+    flex-direction: column
+    gap: 20px
+    width: 300px
+
+.field
+  padding: 15px
+  border-radius: 10px
+  border: 1px solid $black
+  outline: none
+  color: $black
+
+
+.field::-webkit-input-placeholder
+  color: rgb($black, 0.5)
+
+.field:focus::-webkit-input-placeholder
+  color: $black
+
+.titleContainer
+  display: flex
+  flex-direction: column
+  gap: 20px
+  width: 300px

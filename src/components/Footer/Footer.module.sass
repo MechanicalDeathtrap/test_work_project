@@ -1,0 +1,72 @@
+@import 'src/assets/colors.sass'
+@import 'src/mixins/AdaptiveMixins.sass'
+
+.footer
+  background: linear-gradient(180deg,$gradient-orange 0%, $gradient-pink 100%)
+  padding: 2.7vw
+  display: flex
+  gap: 24.8vw
+  @include mobile-tablet
+    padding: 30px 10px 40px 10px
+    flex-direction: column
+    gap: 30px
+
+
+.footerLogo
+  width: 100%
+  @include mobile-tablet
+    width: 70px
+
+.logosContainer
+  display: flex
+  flex-direction: column
+  gap: 20px
+  @include mobile-tablet
+    gap: 126px
+    flex-direction: row
+
+.contactsLogoContainer
+  display: flex
+  gap: 16px
+
+.linksContainer
+  display: flex
+  gap: 11vw
+  @include mobile-tablet
+    gap: 84px
+
+.linksList
+  display: flex
+  flex-direction: column
+  gap: 15px
+  line-height: 130%
+
+.listItem__link
+  transition: 0.3s linear
+  text-decoration: none
+
+.listItem__link:hover
+  color: rgb($white, 0.5)
+
+.contactsContainer
+  display: flex
+  flex-direction: column
+  gap: 20px
+
+.infoContainer
+  display: flex
+  gap: 26.6vw
+  @include mobile-tablet
+    gap: 40px
+    flex-direction: column
+
+
+.contactsInfo
+  display: flex
+  flex-direction: column
+  gap: 10px
+  line-height: 130%
+
+p
+  margin: 0
+

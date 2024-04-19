@@ -1,0 +1,33 @@
+@import 'src/assets/colors.sass'
+@import 'src/mixins/AdaptiveMixins.sass'
+
+.gradientButton
+  height: max-content
+  padding: 12px 20px
+  border-radius: 22px
+  border: none
+  outline: none
+  cursor: pointer
+  transition: background-color 0.3s linear
+  @include mobile-tablet
+    font-size: 16px
+
+.contactsButton
+  background-color: $black
+
+.sendButton
+  background-color: $white
+  color: $black
+
+.gradientButton:hover
+  background: none
+
+.buttonBorder
+  background: linear-gradient(180deg,$gradient-orange 0%, $gradient-pink 100%)
+  border-radius: 40px
+  height: max-content
+  padding: 1px
+  display: flex
+  align-items: center
+  justify-content: center
+  width: max-content

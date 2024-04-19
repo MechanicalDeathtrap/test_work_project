@@ -1,0 +1,13 @@
+@mixin mobile-tablet
+  @media screen and (max-width: $breakpoint-mobile-max) and (min-width: $breakpoint-mobile-min )
+    @content
+
+
+$breakpoint-mobile-min: 319px
+$breakpoint-mobile-max: 1024px
+
+@mixin adaptive_font($font-size)
+  font-size:  calc(12px + ($font-size - 12) * (100vw / 1440))
+
+@mixin adaptive_font_mobile($font-size)
+  font-size:  calc(12px + ($font-size - 12) * (100vw / 1024))

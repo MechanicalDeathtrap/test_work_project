@@ -1,0 +1,21 @@
+@import "/src/assets/colors.sass"
+@import 'src/mixins/AdaptiveMixins.sass'
+
+.mainContainer
+  background: $black
+  padding: 150px 40px 0 40px
+  display: flex
+  flex-direction: column
+  gap: 40px
+  @include mobile-tablet
+    padding: 80px 0 0 0
+    gap: 30px
+
+.newsTitle
+  margin: 0
+  font-weight: 600
+  text-transform: uppercase
+  @include adaptive_font(40)
+  @include mobile-tablet
+    @include adaptive_font_mobile(24)
+    margin-left: 10px

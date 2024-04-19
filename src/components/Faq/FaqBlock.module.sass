@@ -1,0 +1,67 @@
+@import "/src/assets/colors.sass"
+@import 'src/mixins/AdaptiveMixins.sass'
+
+.mainContainer
+  background-color: $black
+  padding: 18.5vh 40px 9.4vh 40px
+  display: flex
+  justify-content: space-between
+  @include mobile-tablet
+    padding: 80px 10px 40px 10px
+    flex-direction: column
+    gap: 30px
+
+.arrowActive
+  transform: rotate(90deg)
+
+.accordionArrow
+  width: 36px
+
+.blockTitle
+  font-weight: 600
+  text-transform: uppercase
+  margin: 0
+  @include adaptive_font(40)
+  width: 95%
+  @include mobile-tablet
+    @include adaptive_font_mobile(24)
+
+.accordionContainer
+  width: 62.5vw
+  @include mobile-tablet
+    width: 100%
+
+.title
+  font-weight: 600
+  margin: 0
+  text-transform: uppercase
+  width: 62.5vw
+  @include adaptive_font(24)
+  @include mobile-tablet
+    @include adaptive_font_mobile(16)
+
+.accordionTitle
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 30px 0
+  @include mobile-tablet
+    padding: 20px 0
+    width: 100%
+
+.listItem
+  border-bottom: 1px solid $accordion-border-color
+
+.info
+  font-weight: 400
+  line-height: 130%
+
+.accordionContent
+  width: 40.2vw
+  padding-bottom: 30px
+  @include mobile-tablet
+    padding-bottom: 20px
+    width: 100%
+
+.nonActive
+  display: none

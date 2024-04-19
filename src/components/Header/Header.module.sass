@@ -1,0 +1,165 @@
+@import 'src/assets/colors.sass'
+@import 'src/mixins/AdaptiveMixins.sass'
+
+.header
+  position: relative
+
+.overlay
+  display: none
+  @include mobile-tablet
+    display: flex
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.5)
+    z-index: 5
+
+
+.mainContainer
+  background: $black
+  display: flex
+  padding: 20px 40px 15px 40px
+  justify-content: space-between
+  z-index: 15
+  border-bottom: 1px solid rgb($white, 0.3)
+  position: fixed
+  width: 100%
+  @include mobile-tablet
+    padding: 20px 10px 10px 10px
+
+.logo
+  @include mobile-tablet
+    width: 44px
+
+.headerInfoContainer
+  display: flex
+  gap: 18vw
+  align-items: center
+  @include mobile-tablet
+    position: absolute
+    top: 83.9px
+    right: 0
+    background: $black
+    flex-direction: column
+    align-items: start
+    padding: 30px 0 0 10px
+    height: 100vh
+    width: 320px
+    z-index: 10
+
+  &__navigation
+    display: flex
+    position: absolute
+    right: 50% - 13%
+    top: 45%
+    @include mobile-tablet
+      position: static
+
+.navigation__list
+  display: flex
+  gap: 30px
+  @include mobile-tablet
+    flex-direction: column
+    gap: 10px
+
+.logo, .buttonContainer  ///ЗАМЕНИ
+  position: relative
+  z-index: 15
+
+.buttonContainer
+  @include mobile-tablet
+    position: fixed
+    bottom: 20px
+
+.accordionItem__link, .listItem__link
+  font-size: 1em
+  text-decoration: none
+
+.accordionInfo
+  position: fixed
+  background: $black
+  width: 105vw
+  display: grid
+  grid-auto-flow: row
+  grid-template-columns:  180px 180px
+  grid-gap: 15px 61px
+  justify-content: center
+  left: 0vw
+  top: 110px
+  padding: 30px 0 60px 0
+  z-index: 1
+  @include mobile-tablet
+    position: static
+    width: 100%
+    display: flex
+    flex-direction: column
+    padding: 10px 20px 16px 20px
+
+.accordionItem
+  width: max-content
+
+.listItem__link, .accordionItem__link
+  transition: 0.3s linear
+
+.listItem__link:hover, .accordionItem__link:hover
+  color: rgb($white, 0.5)
+
+.accordionContent
+  display: none
+  opacity: 0
+
+.accordionContent::after
+  content: ''
+  background-color: rgb($black, 0.5)
+  height: 100vh
+  width: 103.9vw
+  left: -36.9vw
+  position: absolute
+  @include mobile-tablet
+    display: none
+
+.accordion:hover .accordionContent, .accordionContent:hover, .accordionContent.active
+  display: flex
+  flex-direction: column
+  opacity: 1
+
+.layout
+  position: fixed
+  background-color: rgb($black, 0.5)
+  height: 100vh
+  width: 103.9vw
+  left: -36.9vw
+  @include mobile-tablet
+    display: none
+
+.accordion:hover .accordionArrow
+  transform: rotate(90deg)
+
+.accordionTitle
+  display: flex
+  align-items: center
+  gap: 4px
+  font-size: 1em
+
+.buttonsContainer
+  display: none
+  @include mobile-tablet
+    display: flex
+    z-index: 10
+
+.menu, .cross
+
+  @include mobile-tablet
+    background: $black
+    outline: none
+    border: none
+    cursor: pointer
+
+.nonActive
+  display: none
+
+.shaded
+  @include mobile-tablet
+    color: rgb($white, 0.5)

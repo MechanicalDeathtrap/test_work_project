@@ -1,0 +1,15 @@
+@import 'assets/colors.sass'
+@import "assets/fonts/fonts.css"
+@import 'src/mixins/AdaptiveMixins.sass'
+
+*
+  color: $white
+  box-sizing: border-box
+  font-family: 'MyInter', 'sans-serif'
+  font-weight: 500
+  @include adaptive_font(16)
+
+ul
+  list-style-type: none
+  margin: 0
+  padding: 0
