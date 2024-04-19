@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom';
 import {GradientButton} from "../GradientButton/GradientButton.jsx";
 import {Modal} from "../Modal/Modal.jsx";
 import {useEffect, useState} from "react";
+import logo from "/public/market-purchase-svgrepo-com.svg"
+import arrow from "/public/AccordionArrow.svg"
 
 
 export const Header = () => {
@@ -37,7 +39,7 @@ export const Header = () => {
         <>
             <header className={style.header}>
                 <div className={style.mainContainer}>
-                    <img src={"public/market-purchase-svgrepo-com.svg"} alt="logo" className={style.logo}/>
+                    <img src={logo} alt="logo" className={style.logo}/>
                     {
                         (isMobile && isVisibleMenu || !isMobile) ?
                             <>
@@ -49,7 +51,7 @@ export const Header = () => {
                                             <div className={style.accordion} >
                                                 <span className={`${style.accordionTitle} ${ isOpenedNumber !==1  ? style.shaded : ''}`}>
                                                     О нас
-                                                    <img src={"/public/AccordionArrow.svg"} alt="arrow" className={(isOpenedNumber === 1 || !isMobile)? `${style.accordionArrow}`: ``}/>
+                                                    <img src={arrow} alt="arrow" className={(isOpenedNumber === 1 || !isMobile)? `${style.accordionArrow}`: ``}/>
                                                 </span>
                                                 <div className={(isOpenedNumber === 1 || !isMobile)? `${style.accordionContent}`: `${style.nonActive}`}>
                                                     <ul className={style.accordionInfo}>
@@ -77,7 +79,7 @@ export const Header = () => {
                                             <div className={style.accordion}>
                                                 <span className={`${style.accordionTitle} ${ isOpenedNumber !==2   ? style.shaded : ''}`}>
                                                     Проекты
-                                                    <img src={"/public/AccordionArrow.svg"} alt="arrow" className={(isOpenedNumber === 2 || !isMobile)? `${style.accordionArrow} ${style.arrowActive}`: ``}/>
+                                                    <img src={"/public/AccordionArrow.svg"} alt="arrow" className={(isOpenedNumber === 2 || !isMobile)? `${style.accordionArrow}`: ``}/>
                                                 </span>
                                                 <div className={(isOpenedNumber === 2 || !isMobile)? `${style.accordionContent}`: `${style.nonActive}`} >
                                                     <ul className={style.accordionInfo}>
