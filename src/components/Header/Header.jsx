@@ -37,7 +37,7 @@ export const Header = () => {
         <>
             <header className={style.header}>
                 <div className={style.mainContainer}>
-                    <img src="public/market-purchase-svgrepo-com.svg" alt="logo" className={style.logo}/>
+                    <img src={"public/market-purchase-svgrepo-com.svg"} alt="logo" className={style.logo}/>
                     {
                         (isMobile && isVisibleMenu || !isMobile) ?
                             <>
@@ -49,7 +49,7 @@ export const Header = () => {
                                             <div className={style.accordion} >
                                                 <span className={`${style.accordionTitle} ${ isOpenedNumber !==1  ? style.shaded : ''}`}>
                                                     О нас
-                                                    <img src="/public/AccordionArrow.svg" alt="arrow" className={(isOpenedNumber === 1 || !isMobile)? `${style.accordionArrow}`: ``}/>
+                                                    <img src={"/public/AccordionArrow.svg"} alt="arrow" className={(isOpenedNumber === 1 || !isMobile)? `${style.accordionArrow}`: ``}/>
                                                 </span>
                                                 <div className={(isOpenedNumber === 1 || !isMobile)? `${style.accordionContent}`: `${style.nonActive}`}>
                                                     <ul className={style.accordionInfo}>
@@ -77,7 +77,7 @@ export const Header = () => {
                                             <div className={style.accordion}>
                                                 <span className={`${style.accordionTitle} ${ isOpenedNumber !==2   ? style.shaded : ''}`}>
                                                     Проекты
-                                                    <img src="/public/AccordionArrow.svg" alt="arrow" className={(isOpenedNumber === 2 || !isMobile)? `${style.accordionArrow} ${style.arrowActive}`: ``}/>
+                                                    <img src={"/public/AccordionArrow.svg"} alt="arrow" className={(isOpenedNumber === 2 || !isMobile)? `${style.accordionArrow} ${style.arrowActive}`: ``}/>
                                                 </span>
                                                 <div className={(isOpenedNumber === 2 || !isMobile)? `${style.accordionContent}`: `${style.nonActive}`} >
                                                     <ul className={style.accordionInfo}>
@@ -97,7 +97,6 @@ export const Header = () => {
                                                             <Link to='/' className={style.accordionItem__link}>Устойчивое развитие</Link>
                                                         </li>
                                                     </ul>
-                                                    {/*<div className={style.layout}></div>*/}
                                                 </div>
                                             </div>
                                         </li>
@@ -126,10 +125,10 @@ export const Header = () => {
                         {
                             isVisibleMenu ?
                                 <button className={style.cross} onClick={() => {setIsVisibleMenu(prevState => !prevState)}}>
-                                    <img src="/public/menuCross.svg" alt="cross"/>
+                                    <img src={"/public/menuCross.svg"} alt="cross"/>
                                 </button> :
                                 <button className={style.menu} type='button' onClick={() => {setIsVisibleMenu(prevState => !prevState)}}>
-                                    <img src="/public/Burger.svg" alt="menu_logo" className="menuLogo"/>
+                                    <img src={"/public/Burger.svg"} alt="menu_logo" className="menuLogo"/>
                                 </button>
                         }
                     </div>
