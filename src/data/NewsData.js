@@ -1,8 +1,14 @@
+import firstImage from "/public/card606.png"
+import secondImage from "/public/card607.png"
+import thirdImage from "/public/card608.png"
+import fourthImage from "/public/card609.png"
+import fifthImage from  "/public/card610.png"
+import sixthImage from "/public/card611.png"
 
 export const NewsData = [
     {
         id: 0,
-        imgInnerLink: "/public/card606.png",
+        imgInnerLink: {firstImage},
         title: 'Заголовок новости 1',
         description: 'Описание новости в 3 строки Описание новости в 3 строкиОписание новости в 3 строкиОписание новости в 3 строки Описание новости в 3 строки Описание...',
         date: '01 января 1990',
@@ -19,7 +25,7 @@ export const NewsData = [
     },
     {
         id: 1,
-        imgInnerLink: "/public/card607.png",
+        imgInnerLink: {secondImage},
         title: 'Заголовок новости 2',
         description: 'Описание новости в 3 строки Описание новости в 3 строкиОписание новости в 3 строкиОписание новости в 3 строки Описание новости в 3 строки Описание...',
         date: '01 января 1990',
@@ -36,7 +42,7 @@ export const NewsData = [
     },
     {
         id: 2,
-        imgInnerLink: "/public/card608.png",
+        imgInnerLink: {thirdImage},
         title: 'Заголовок новости 3',
         description: 'Описание новости в 3 строки Описание новости в 3 строкиОписание новости в 3 строкиОписание новости в 3 строки Описание новости в 3 строки Описание...',
         date: '01 января 1990',
@@ -53,7 +59,7 @@ export const NewsData = [
     },
     {
         id: 3,
-        imgInnerLink: "/public/card609.png",
+        imgInnerLink: {fourthImage},
         title: 'Заголовок новости 4',
         description: 'Описание новости в 3 строки Описание новости в 3 строкиОписание новости в 3 строкиОписание новости в 3 строки Описание новости в 3 строки Описание...',
         date: '01 января 1990',
@@ -70,7 +76,7 @@ export const NewsData = [
     },
     {
         id: 4,
-        imgInnerLink: "/public/card610.png",
+        imgInnerLink: {fifthImage},
         title: 'Заголовок новости 5',
         description: 'Описание новости в 3 строки Описание новости в 3 строкиОписание новости в 3 строкиОписание новости в 3 строки Описание новости в 3 строки Описание...',
         date: '01 января 1990',
@@ -87,7 +93,7 @@ export const NewsData = [
     },
     {
         id: 5,
-        imgInnerLink: "/public/card611.png",
+        imgInnerLink: {sixthImage},
         title: 'Заголовок новости 6',
         description: 'Описание новости в 3 строки Описание новости в 3 строкиОписание новости в 3 строкиОписание новости в 3 строки Описание новости в 3 строки Описание...',
         date: '01 января 1990',
