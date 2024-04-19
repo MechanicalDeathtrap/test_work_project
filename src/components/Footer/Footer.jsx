@@ -1,10 +1,12 @@
 import style from './Footer.module.sass'
 import {Link} from "react-router-dom";
+import logo from "/public/Logo.svg"
+
 export const Footer = () =>{
     return(
         <footer className={style.footer}>
             <div className={style.logosContainer}>
-                <img src="/public/Logo.svg" alt="main_logo" className={style.footerLogo}/>
+                <img src={logo} alt="main_logo" className={style.footerLogo}/>
                 <div className={style.contactsLogoContainer}>
                     <Link to='/' className={style.listItem__link}>
                         <img src="/public/youtube.svg" alt="youtube_logo"/>

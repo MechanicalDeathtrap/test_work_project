@@ -5,6 +5,8 @@ import {Modal} from "../Modal/Modal.jsx";
 import {useEffect, useState} from "react";
 import logo from "/public/market-purchase-svgrepo-com.svg"
 import arrow from "/public/AccordionArrow.svg"
+import cross from "/public/menuCross.svg"
+import menu_logo from "/public/Burger.svg"
 
 
 export const Header = () => {
@@ -79,7 +81,7 @@ export const Header = () => {
                                             <div className={style.accordion}>
                                                 <span className={`${style.accordionTitle} ${ isOpenedNumber !==2   ? style.shaded : ''}`}>
                                                     Проекты
-                                                    <img src={"/public/AccordionArrow.svg"} alt="arrow" className={(isOpenedNumber === 2 || !isMobile)? `${style.accordionArrow}`: ``}/>
+                                                    <img src={arrow} alt="arrow" className={(isOpenedNumber === 2 || !isMobile)? `${style.accordionArrow}`: ``}/>
                                                 </span>
                                                 <div className={(isOpenedNumber === 2 || !isMobile)? `${style.accordionContent}`: `${style.nonActive}`} >
                                                     <ul className={style.accordionInfo}>
@@ -127,10 +129,10 @@ export const Header = () => {
                         {
                             isVisibleMenu ?
                                 <button className={style.cross} onClick={() => {setIsVisibleMenu(prevState => !prevState)}}>
-                                    <img src={"/public/menuCross.svg"} alt="cross"/>
+                                    <img src={cross} alt="cross"/>
                                 </button> :
                                 <button className={style.menu} type='button' onClick={() => {setIsVisibleMenu(prevState => !prevState)}}>
-                                    <img src={"/public/Burger.svg"} alt="menu_logo" className="menuLogo"/>
+                                    <img src={menu_logo} alt="menu_logo" className="menuLogo"/>
                                 </button>
                         }
                     </div>

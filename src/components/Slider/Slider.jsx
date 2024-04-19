@@ -1,5 +1,6 @@
 import style from './Slider.module.sass'
 import {useState} from "react";
+import arrow from "/public/Slider_Arrow.svg"
 
 export const Slider = ({data}) =>{
 
@@ -36,8 +37,8 @@ export const Slider = ({data}) =>{
                                                         </div>
                                                     </div>
                                                     <div className={style.arrows}>
-                                                        <img className={style.leftArrow} src="/public/Slider_Arrow.svg" alt="arrow" onClick={prevSlide}/>
-                                                        <img className={style.rightArrow} src="/public/Slider_Arrow.svg" alt="arrow" onClick={nextSlide}/>
+                                                        <img className={style.leftArrow} src={arrow} alt="arrow" onClick={prevSlide}/>
+                                                        <img className={style.rightArrow} src={arrow} alt="arrow" onClick={nextSlide}/>
                                                     </div>
                                                 </div>
                                                 <div className={style.imageContainer}>

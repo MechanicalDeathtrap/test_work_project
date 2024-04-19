@@ -1,5 +1,6 @@
 import style from "./FaqBlock.module.sass"
-import { useState} from "react";
+import {useState} from "react";
+import arrow from "/public/AccordionArrow.svg"
 
 export const FaqBlock = () =>{
 
@@ -23,7 +24,7 @@ export const FaqBlock = () =>{
                         <div className={style.accordion}>
                             <div className={style.accordionTitle}>
                                 <h2 className={style.title}> Какие услуги предоставляет ваша студия? </h2>
-                                <img src="/public/AccordionArrow.svg" alt="arrow" className={(isOpenedNumber === 1)? `${style.accordionArrow} ${style.arrowActive}`: `${style.accordionArrow} `}/>
+                                <img src={arrow} alt="arrow" className={(isOpenedNumber === 1)? `${style.accordionArrow} ${style.arrowActive}`: `${style.accordionArrow} `}/>
                             </div>
                             <div className={(isOpenedNumber === 1)? `${style.accordionContent}`: `${style.accordionContent} ${style.nonActive}`}>
                                 <p className={style.info}>Мы придерживаемся высоких стандартов качества и стремимся создавать уникальный дизайн, отвечающий потребностям и ожиданиям наших клиентов. Наши дизайнеры постоянно совершенствуют свои навыки и следят за новыми трендами в дизайне.</p>
@@ -34,7 +35,7 @@ export const FaqBlock = () =>{
                         <div className={style.accordion}>
                             <div className={style.accordionTitle}>
                                 <h2 className={style.title}>Как вы обеспечиваете качество и уникальность дизайна? </h2>
-                                <img src="/public/AccordionArrow.svg" alt="arrow" className={(isOpenedNumber === 2)? `${style.accordionArrow} ${style.arrowActive}`: `${style.accordionArrow} `}/>
+                                <img src={arrow} alt="arrow" className={(isOpenedNumber === 2)? `${style.accordionArrow} ${style.arrowActive}`: `${style.accordionArrow} `}/>
                             </div>
 
                             <div className={(isOpenedNumber === 2)? `${style.accordionContent}`: `${style.accordionContent} ${style.nonActive}`}>
@@ -46,7 +47,7 @@ export const FaqBlock = () =>{
                         <div className={style.accordion}>
                             <div className={style.accordionTitle}>
                                 <h2 className={style.title}>Предоставляете ли вы услуги по созданию контента для сайтов и приложений? </h2>
-                                <img src="/public/AccordionArrow.svg" alt="arrow" className={(isOpenedNumber === 3)? `${style.accordionArrow} ${style.arrowActive}`: `${style.accordionArrow} `}/>
+                                <img src={arrow} alt="arrow" className={(isOpenedNumber === 3)? `${style.accordionArrow} ${style.arrowActive}`: `${style.accordionArrow} `}/>
                             </div>
                             <div className={(isOpenedNumber === 3)? `${style.accordionContent}`: `${style.accordionContent} ${style.nonActive}`}>
                                 <p className={style.info}>Мы придерживаемся высоких стандартов качества и стремимся создавать уникальный дизайн, отвечающий потребностям и ожиданиям наших клиентов. Наши дизайнеры постоянно совершенствуют свои навыки и следят за новыми трендами в дизайне.</p>

@@ -2,6 +2,7 @@ import style from './Modal.module.sass'
 import {GradientButton} from "../GradientButton/GradientButton.jsx";
 import InputMask from 'react-input-mask'
 import {Checkbox} from "../Checkbox/Checkbox.jsx";
+import cross from "/public/cross.svg"
 
 export const Modal = ({setVisibility}) =>{
     const changeVisibility = () =>{
@@ -13,7 +14,7 @@ export const Modal = ({setVisibility}) =>{
             <div className={style.modalWindow}>
                 <div className={style.modalTitleContainer}>
                     <h2 className={style.modalTitle}>СВЯЗАТЬСЯ С НАМИ</h2>
-                    <img src="/public/cross.svg" alt="cross" onClick={() => changeVisibility()} className={style.cross}/>
+                    <img src={cross} alt="cross" onClick={() => changeVisibility()} className={style.cross}/>
                 </div>
                 <form action="" className={style.modalForm}>
                     <div className={style.modalForm__inputs}>
