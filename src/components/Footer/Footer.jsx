@@ -1,6 +1,9 @@
 import style from './Footer.module.sass'
 import {Link} from "react-router-dom";
 import logo from "/public/Logo.svg"
+import youtube_logo from "/public/youtube.svg"
+import tg_logo from "/public/tg.svg"
+import vk_logo from "/public/vk.svg"
 
 export const Footer = () =>{
     return(
@@ -9,13 +12,13 @@ export const Footer = () =>{
                 <img src={logo} alt="main_logo" className={style.footerLogo}/>
                 <div className={style.contactsLogoContainer}>
                     <Link to='/' className={style.listItem__link}>
-                        <img src="/public/youtube.svg" alt="youtube_logo"/>
+                        <img src={youtube_logo} alt="youtube_logo"/>
                     </Link>
                     <Link to='/' className={style.listItem__link}>
-                        <img src="/public/tg.svg" alt="telegramm_logo"/>
+                        <img src={tg_logo} alt="telegramm_logo"/>
                     </Link>
                     <Link to='/' className={style.listItem__link}>
-                        <img src="/public/vk.svg" alt="vk_logo"/>
+                        <img src={vk_logo} alt="vk_logo"/>
                     </Link>
                 </div>
             </div>
